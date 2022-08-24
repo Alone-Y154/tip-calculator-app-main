@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+/* container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 400px;
+  height: 350px;
+  background: white;
+  padding-left: 2.5rem;
+}
+
+.first-card {
+  border-radius: 20px 0 0 20px;
+}
+
+.input-svg {
+  background: hsl(189, 41%, 97%);
+  width: 320px;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: -2rem;
+}
+
+.input-svg input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  text-align: right;
+  color: hsl(184, 14%, 56%);
+  font-size: 24px;
+  font-family: monospace;
+  position: relative;
+  padding-left: 25px;
+}
+
+.input-svg svg {
+  margin-left: 10px;
+  margin-top: 12px;
+  position: absolute;
+  z-index: 5;
+}
+
+.card-text {
+  color: hsl(186, 14%, 43%);
+  font-size: 12px;
+  margin-top: 2rem;
+  padding-bottom: 8px;
+}
+
+.custom-input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  text-align: right;
+  color: hsl(184, 14%, 56%);
+  font-family: monospace;
+  font-size: 24px;
+}
+
+input:invalid {
+  border: solid red 3px;
+}
+
+table input {
+  width: 100px;
+  height: 40px;
+  font-family: monospace;
+  font-weight: 700;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  margin: 5px 5px 0 0;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+table input:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+}
+
+/* table input:focus {
+    background: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+} */
+.active {
+  background: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+}
+
+.tip {
+  margin-bottom: -5px;
+  margin-top: 15px;
+}
+
+.custom {
+  color: hsl(186, 14%, 43%);
+  background: hsl(189, 41%, 97%);
+}
+
+/* seconnd box */
+.second-card {
+  border-radius: 0 20px 20px 0;
+}
+
+.second-card-box {
+  background: hsl(183, 100%, 15%);
+  margin: 2rem 2rem 2rem -1rem;
+  border-radius: 20px;
+  height: 286px;
+  width: 346px;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.cal {
+  color: hsl(172, 67%, 45%);
+}
+
+.second-heading h6 {
+  color: hsl(189, 41%, 97%);
+  font-size: 14px;
+}
+
+.second-heading span {
+  color: hsl(184, 14%, 56%);
+  font-size: 10px;
+  position: relative;
+  top: -32px;
+}
+
+.total {
+  margin-top: -2rem;
+}
+
+.second-card-btn {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.reset-btn {
+  width: 135px;
+  height: 40px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-family: monospace;
+  background: hsl(172, 67%, 45%);
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: hsl(185, 41%, 84%);
+}
+
+
+
+
+/* responsive */
+
+
+@media (max-width:800px) {
+
+    .container {
+      flex-direction: column;
+    }
+    .first-card {
+      border-radius: 20px 20px 0 0;
+    }
+    .second-card {
+      border-radius: 0 0 20px 20px;
+    }
+
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+footer a {
+  text-decoration: none;
+    color: blue;
+}
+
+footer a:hover {
+  color: hsl(172, 67%, 45%);
+}
